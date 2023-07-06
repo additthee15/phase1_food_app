@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <script src="script/script.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+            Snack Point
+        </title>
+    </head>
+    <body style="background-color: black;" onload="showCartTable()">
+        <div class="col-md-12" style="margin-top: 10px;" >
+            <img src="images/logo.jpeg" height="100px" width="100px">
+            <button class="btn btn-info btn-md" style="align-self: center; margin-left: 150px;"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+            <button class="btn btn-info btn-md" style="align-self: center; margin: 10px;"><i class="fa fa-tag" aria-hidden="true"></i> Offers</button>
+            <a href="cart.html" type="button" class="btn btn-warning" style="margin: 10px;">
+                <i class="fa fa-shopping-cart"></i> Item(s)
+                <input type="number" name="" id="count" value="0" hidden> 
+                <span id="countOncart" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> 0 </span>
+            </a>
+        </div>
+        <br>
+        <br><br>
+        
+            
+        <div class="col-md-2 overflow-auto" style="margin-top: 7px;"> 
+            <ul class="nav flex-column">
+                <li class="nav-item"><a href="index.html" style="color: coral;font-size: medium; font-family: Arial, Helvetica, sans-serif;">Home</a></h4>
+                <li class="nav-item"><a href="#" style="color: coral;font-size: medium; font-family: Arial, Helvetica, sans-serif;">Services</a></h4>
+                <li class="nav-item"><a href="cart.html" style="color: coral;font-size: medium; font-family: Arial, Helvetica, sans-serif;">Your Orders</a></h4>
+                <li class="nav-item"><a href="#" style="color: coral;font-size: medium; font-family: Arial, Helvetica, sans-serif;">Wishlist</a></h4>
+                <li class="nav-item"><a href="cart.html" style="color: coral;font-size: medium; font-family: Arial, Helvetica, sans-serif;">Cart</a></h4>
+                <li class="nav-item"><a href="#" style="color: coral;font-size: medium; font-family: Arial, Helvetica, sans-serif;">Contact</a></h4>
+               <li class="nav-item"><a href="#" style="color: coral;font-size: medium; font-family: Arial, Helvetica, sans-serif;">Checkout</a></h4>
+        </ul>
+        </div>
+        <div class="container">
+            <h3 style="color: beige;">Items Added in Cart</h3>
+            <div class="col-md-8">
+                <table id="tableCart" style="color: brown;background-color: blanchedalmond; width: 750px; height:250px;" class="table table-info">
+                    
+                
+                </table>
+                <p id="total" style="color:yellowgreen;text-align: center; font-size: large;font-weight: bolder; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"></p>
+            </div>
+            <div class="col-md-2">
+                <p style="color:yellowgreen; font-size: large; font-weight: bolder; font-family: 'Times New Roman', Times, serif;">GO FOR HUNT</p>
+                <ul class="nav flex-column">
+                <div class="row-fluid">
+                    <li class="nav-item"><a href="pizza.html"><img src="images/pizza/pizza.jpeg" class="img-circle" style="height: 50px; width: 50px;"></a>
+                        <span style="color:yellowgreen; font-size: medium;">Pizza</span>
+                </div>
+                <br>
+                <div class="row-fluid">
+                    <li class="nav-item"> <a href="burger.html"><img src="images/burger.jpeg" class="img-circle" style="height: 50px; width: 50px;"></a>
+                    <span style="color:yellowgreen; font-size: medium;">Burger</span>
+                </div>
+                <br>
+                <div class="row-fluid">
+                    <li class="nav-item"><a href="puffs.html"><img src="images/puffs.jpeg" class="img-circle" style="height: 50px; width: 50px;"></a>
+                    <span style="color:yellowgreen; font-size: medium;">Puff</span>
+                </div>
+                <br>
+                <div class="row-fluid">
+                    <li class="nav-item"><a href="sandwich.html"><img src="images/sandwich.jpeg" class="img-circle" style="height: 50px; width: 50px;"></a>
+                    <span style="color:yellowgreen; font-size: medium;">Sandwich</span>
+                </div>
+            </ul>    
+            </div>
+    </body>
